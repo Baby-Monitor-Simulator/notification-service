@@ -2,9 +2,7 @@ package com.babywatchers.notificationservice.messagebus;
 
 import com.rabbitmq.client.*;
 
-import java.io.IOException;
-
-public class RabbitMQ implements IMessageBus {
+public class RabbitMQ implements MessageBus {
     Connection connection;
     final private String graphExchange = "graphdata";
 
